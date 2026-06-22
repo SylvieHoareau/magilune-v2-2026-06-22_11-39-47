@@ -1,80 +1,43 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Entity
 {
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f;
-
-    [Header("Jump")]
     [SerializeField] private float jumpForce = 10f;
-    [SerializeField] private bool canJump = true;
 
-    [Header("Ground Check")]
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundCheckRadius = 0.2f;
-    [SerializeField] private LayerMask groundLayer;
+    [Header("Abilities")]
+    [SerializeField] private bool canJump = true;      // Désactivé au milieu
+    [SerializeField] private bool hasLocomotion = false; // Grapple/Jetpack
 
     private Rigidbody2D rb;
-
-    private float horizontalInput;
     private bool isGrounded;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    // Branché sur le nouveau Input System (Gamepad)
+    private PlayerInput input;
+
+    protected override void Awake()
     {
+        base.Awake();
         rb = GetComponent<Rigidbody2D>();
+        input = GetComponent<PlayerInput>();
     }
 
-
-    // Update is called once per frame
-    void Update()
+    private void OnMove(InputValue value)
     {
-        isGrounded = Physics2D.OverlapCircle(
-            groundCheck.position,
-            groundCheckRadius,
-            groundLayer
-        );
-
-        horizontalInput = Input.GetAxis("Horizontal");
-
-        if (Input.GetButtonDown("Jump") && canJump)
-        {
-            Jump();
-        }
-
-        Flip();
+        float x = value.Get<Vector2>().x;
+        rb.velocity = new Vector2(x * moveSpeed, rb.velocity.y);
     }
 
-    void FixedUpdate()
+    private void OnJump()
     {
-        // Move the player horizontally based on input
-        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        if (canJump && isGrounded)
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
-    /// <summary>
-    /// Makes the player jump if they are grounded and can jump.
-    /// </summary>
-    private void Jump()
-    {
-        if (isGrounded)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            canJump = false;
-        }
-    }
+    private void OnShoot() { /* Instancie un projectile */ }
 
-    /// <summary>
-    /// Flips the player sprite based on the horizontal input.
-    /// </summary>
-    private void Flip()
-    {
-        if (horizontalInput > 0)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        else if (horizontalInput < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
-    }
+    // Appelé par le LevelManager au milieu du niveau
+    public void DisableJump() => canJump = false;
+    public void EnableLocomotion() => hasLocomotion = true;
 }
