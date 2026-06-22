@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 993dc86afa558c347b1b1dfb0b18b287
+AssetOrigin:
+  serializedVersion: 1
+  productId: 325772
+  packageName: Verdant Heart Art and Animation Pack
+  packageVersion: 1.0
+  assetPath: Assets/GuildedHutStudio/VerdantHeartArtPack/Scripts/StateMachine/PlayerStates/PlayerIdleState.cs
+  uploadId: 770736

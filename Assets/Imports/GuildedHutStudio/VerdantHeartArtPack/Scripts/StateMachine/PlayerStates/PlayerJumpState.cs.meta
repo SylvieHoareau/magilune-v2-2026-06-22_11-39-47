@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 65585fc5376d0b34c880b325904959b0
+AssetOrigin:
+  serializedVersion: 1
+  productId: 325772
+  packageName: Verdant Heart Art and Animation Pack
+  packageVersion: 1.0
+  assetPath: Assets/GuildedHutStudio/VerdantHeartArtPack/Scripts/StateMachine/PlayerStates/PlayerJumpState.cs
+  uploadId: 770736

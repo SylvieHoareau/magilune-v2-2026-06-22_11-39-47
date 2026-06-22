@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 346c5ce5cfb71b64883fbca972eb4e8e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 6200000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 325772
+  packageName: Verdant Heart Art and Animation Pack
+  packageVersion: 1.0
+  assetPath: Assets/GuildedHutStudio/VerdantHeartArtPack/Physics Materials/frictionless.physicsMaterial2D
+  uploadId: 770736
