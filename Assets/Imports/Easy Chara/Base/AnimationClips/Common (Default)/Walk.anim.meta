@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 628d9754a182d16449be333f7c337cfc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 313655
+  packageName: "Easy Chara \u2013 Hisa 2D Character Collection"
+  packageVersion: 1.3
+  assetPath: Assets/Easy Chara/Base/AnimationClips/Common (Default)/Walk.anim
+  uploadId: 928858

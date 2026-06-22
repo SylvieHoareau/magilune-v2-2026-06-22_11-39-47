@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem; 
 
 public class PlayerController : Entity
 {
@@ -14,27 +15,41 @@ public class PlayerController : Entity
     private bool isGrounded;
 
     // Branché sur le nouveau Input System (Gamepad)
-    private PlayerInput input;
-
+    private @PlayerInput playerInputAsset;
+    private InputAction moveAction;
+    private InputAction jumpAction;
     protected override void Awake()
     {
         base.Awake();
         rb = GetComponent<Rigidbody2D>();
-        input = GetComponent<PlayerInput>();
+
+        playerInputAsset = new @PlayerInput();
+        moveAction = playerInputAsset.Player.Move;
+        jumpAction = playerInputAsset.Player.Jump;
     }
 
-    private void OnMove(InputValue value)
+     private void OnEnable()
     {
-        float x = value.Get<Vector2>().x;
-        rb.velocity = new Vector2(x * moveSpeed, rb.velocity.y);
+        moveAction.Enable();
+        jumpAction.Enable();
     }
 
-    private void OnJump()
+    private void OnDisable()
     {
-        if (canJump && isGrounded)
+        moveAction.Disable();
+        jumpAction.Disable();
+    }
+
+    private void Update()
+    {
+        // Mouvement
+        float x = moveAction.ReadValue<Vector2>().x;
+        rb.linearVelocity = new Vector2(x * moveSpeed, rb.linearVelocity.y);
+
+        // Saut
+        if (jumpAction.WasPressedThisFrame() && canJump && isGrounded)
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
-
     private void OnShoot() { /* Instancie un projectile */ }
 
     // Appelé par le LevelManager au milieu du niveau

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerGun : MonoBehaviour
 {
@@ -12,14 +13,22 @@ public class PlayerGun : MonoBehaviour
     [SerializeField] private float fireRate = 0.3f;
 
     private float nextFireTime;
+    private @PlayerInput playerInputAsset; 
+    private InputAction shootAction;
+
+    private void Awake()
+    {
+        playerInputAsset = new @PlayerInput();    
+        shootAction = playerInputAsset.Player.Shoot;
+    }
+
+    private void OnEnable()  => shootAction.Enable();
+    private void OnDisable() => shootAction.Disable();
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") &&
-            Time.time >= nextFireTime)
-        {
+          if (shootAction.WasPressedThisFrame() && Time.time >= nextFireTime)
             Shoot();
-        }
     }
 
     private void Shoot()
