@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: b773bcec4c85b4e4a8ef7dcfc0eff524
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1687222654241360660
+    second: Magilune-walk-v1_0
+  - first:
+      213: 8468194601656783429
+    second: Magilune-walk-v1_1
+  - first:
+      213: 7317699543271989752
+    second: Magilune-walk-v1_2
+  - first:
+      213: 3387173877208743039
+    second: Magilune-walk-v1_3
+  - first:
+      213: 7580350939089962244
+    second: Magilune-walk-v1_4
+  - first:
+      213: 5046543450497043734
+    second: Magilune-walk-v1_5
+  - first:
+      213: 5907981555500951822
+    second: Magilune-walk-v1_6
+  - first:
+      213: 2069226749109381928
+    second: Magilune-walk-v1_7
+  - first:
+      213: -8597384778823165661
+    second: Magilune-walk-v1_8
+  - first:
+      213: 2409157110038839285
+    second: Magilune-walk-v1_9
+  - first:
+      213: 4973858040400708593
+    second: Magilune-walk-v1_10
+  - first:
+      213: 7919158433936830790
+    second: Magilune-walk-v1_11
+  - first:
+      213: 4728412277234976704
+    second: Magilune-walk-v1_12
+  - first:
+      213: 1691577597399849851
+    second: Magilune-walk-v1_13
+  - first:
+      213: -26378621172603094
+    second: Magilune-walk-v1_14
+  - first:
+      213: 5207353684133350026
+    second: Magilune-walk-v1_15
+  - first:
+      213: 3160422209208952199
+    second: Magilune-walk-v1_16
+  - first:
+      213: -928525074420103860
+    second: Magilune-walk-v1_17
+  - first:
+      213: -6209373162050974383
+    second: Magilune-walk-v1_18
+  - first:
+      213: 1572657434488237054
+    second: Magilune-walk-v1_19
+  - first:
+      213: 446112254750627136
+    second: Magilune-walk-v1_20
+  - first:
+      213: 3657888735659800133
+    second: Magilune-walk-v1_21
+  - first:
+      213: -5432654913429796433
+    second: Magilune-walk-v1_22
+  - first:
+      213: -5772009497510491950
+    second: Magilune-walk-v1_23
+  - first:
+      213: 1168365980339055548
+    second: Magilune-walk-v1_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Magilune-walk-v1_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1071
+        width: 151
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4b3fc6fe7c598e0800000000000000
+      internalID: -1687222654241360660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1070
+        width: 152
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54212a0bf12158570800000000000000
+      internalID: 8468194601656783429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1068
+        width: 158
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f1e3c9b6f0bd8560800000000000000
+      internalID: 7317699543271989752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_3
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1069
+        width: 159
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c728ff1b8a10f20800000000000000
+      internalID: 3387173877208743039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 1069
+        width: 157
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40581454401d23960800000000000000
+      internalID: 7580350939089962244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 813
+        width: 157
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d437ec78ce80640800000000000000
+      internalID: 5046543450497043734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_6
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 813
+        width: 156
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09a1334ced5df150800000000000000
+      internalID: 5907981555500951822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_7
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 813
+        width: 157
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ba66cd3ce57bc10800000000000000
+      internalID: 2069226749109381928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_8
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 813
+        width: 155
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32915e43814ffa880800000000000000
+      internalID: -8597384778823165661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_9
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 813
+        width: 156
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ffb8f790ab0f6120800000000000000
+      internalID: 2409157110038839285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 558
+        width: 156
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f30e4df881b60540800000000000000
+      internalID: 4973858040400708593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_11
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 559
+        width: 156
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641f7de53a086ed60800000000000000
+      internalID: 7919158433936830790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_12
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 559
+        width: 156
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7cf28f9e1be9140800000000000000
+      internalID: 4728412277234976704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_13
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 557
+        width: 158
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7bd60bccd0b97710800000000000000
+      internalID: 1691577597399849851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 556
+        width: 158
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27a757a8c842aff0800000000000000
+      internalID: -26378621172603094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_15
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 301
+        width: 159
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a0792069c344840800000000000000
+      internalID: 5207353684133350026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_16
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 301
+        width: 158
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785a72031431cdb20800000000000000
+      internalID: 3160422209208952199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_17
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 300
+        width: 157
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4585264d573d13f0800000000000000
+      internalID: -928525074420103860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_18
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 301
+        width: 156
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d8b1ef100e3d9a0800000000000000
+      internalID: -6209373162050974383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 301
+        width: 157
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb6c08ba9333d510800000000000000
+      internalID: 1572657434488237054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_20
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 45
+        width: 155
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0451c5a6bb8e03600800000000000000
+      internalID: 446112254750627136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_21
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 45
+        width: 157
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546b7ecbc6e63c230800000000000000
+      internalID: 3657888735659800133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_22
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 46
+        width: 153
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa98cb1c3255b94b0800000000000000
+      internalID: -5432654913429796433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_23
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 47
+        width: 151
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8c4b481f3b5efa0800000000000000
+      internalID: -5772009497510491950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-walk-v1_24
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 47
+        width: 151
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbba2c93baed63010800000000000000
+      internalID: 1168365980339055548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Magilune-walk-v1_0: -1687222654241360660
+      Magilune-walk-v1_1: 8468194601656783429
+      Magilune-walk-v1_10: 4973858040400708593
+      Magilune-walk-v1_11: 7919158433936830790
+      Magilune-walk-v1_12: 4728412277234976704
+      Magilune-walk-v1_13: 1691577597399849851
+      Magilune-walk-v1_14: -26378621172603094
+      Magilune-walk-v1_15: 5207353684133350026
+      Magilune-walk-v1_16: 3160422209208952199
+      Magilune-walk-v1_17: -928525074420103860
+      Magilune-walk-v1_18: -6209373162050974383
+      Magilune-walk-v1_19: 1572657434488237054
+      Magilune-walk-v1_2: 7317699543271989752
+      Magilune-walk-v1_20: 446112254750627136
+      Magilune-walk-v1_21: 3657888735659800133
+      Magilune-walk-v1_22: -5432654913429796433
+      Magilune-walk-v1_23: -5772009497510491950
+      Magilune-walk-v1_24: 1168365980339055548
+      Magilune-walk-v1_3: 3387173877208743039
+      Magilune-walk-v1_4: 7580350939089962244
+      Magilune-walk-v1_5: 5046543450497043734
+      Magilune-walk-v1_6: 5907981555500951822
+      Magilune-walk-v1_7: 2069226749109381928
+      Magilune-walk-v1_8: -8597384778823165661
+      Magilune-walk-v1_9: 2409157110038839285
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

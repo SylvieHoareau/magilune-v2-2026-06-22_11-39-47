@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 41974393}
   - component: {fileID: 41974394}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 54911868}
   - component: {fileID: 54911869}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Panorama_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ Transform:
   m_GameObject: {fileID: 58815674}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.15, y: -0.34, z: 0}
+  m_LocalPosition: {x: -1.93, y: -0.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -395,7 +395,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.477217
+  orthographic size: 8.094569
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -420,7 +420,7 @@ Transform:
   m_GameObject: {fileID: 64675924}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3926358, y: 0.53009105, z: -15.022065}
+  m_LocalPosition: {x: -1.13, y: -0.16, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -625,7 +625,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -799,13 +799,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 127026063}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Backgrounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &127026063
 Transform:
   m_ObjectHideFlags: 0
@@ -1056,7 +1056,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1202,7 +1202,7 @@ Transform:
   m_GameObject: {fileID: 456593200}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1, y: -0.32, z: 0}
+  m_LocalPosition: {x: -1.11, y: -0.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1568,7 +1568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 635233332}
   - component: {fileID: 635233333}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Milieu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1658,7 +1658,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 644148681}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -1674,7 +1674,7 @@ Transform:
   m_GameObject: {fileID: 644148680}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.73, y: -0.01, z: 0}
+  m_LocalPosition: {x: 0.8, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1816,7 +1816,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 761498724}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -1832,7 +1832,7 @@ Transform:
   m_GameObject: {fileID: 761498723}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -0.57, z: 0}
+  m_LocalPosition: {x: 0.03, y: -0.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2152,7 +2152,7 @@ Transform:
   m_GameObject: {fileID: 989853175}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.49064, y: 0.2598, z: 0}
+  m_LocalPosition: {x: -4.55, y: -0.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2219,7 +2219,7 @@ Transform:
   m_GameObject: {fileID: 1014607479}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.07, y: -0.31, z: 0}
+  m_LocalPosition: {x: 3.28, y: -0.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2235,7 +2235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1043524033}
   - component: {fileID: 1043524034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Panorama_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2435,7 +2435,7 @@ Transform:
   m_GameObject: {fileID: 1061726704}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.49064, y: -0.2598, z: -10}
+  m_LocalPosition: {x: 3.36064, y: -0.41979998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2593,7 +2593,7 @@ Transform:
   m_GameObject: {fileID: 1135414537}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.490641, y: -0.44979998, z: 0}
+  m_LocalPosition: {x: 15.39, y: -0.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2624,7 +2624,7 @@ Transform:
   m_GameObject: {fileID: 1165363911}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.36064, y: -0.4798, z: 0}
+  m_LocalPosition: {x: 8.56, y: -0.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2767,7 +2767,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1494916957}
   - component: {fileID: 1494916956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Jungle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2971,7 +2971,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -3088,7 +3088,7 @@ GameObject:
   - component: {fileID: 1591885238}
   - component: {fileID: 1591885237}
   - component: {fileID: 1591885236}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -3144,7 +3144,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: 671cc8ae3df9134a09b119feb001c5c9, type: 3}
+  m_Sprite: {fileID: 2342634564435798979, guid: 8deffea50af9e8fa2a561b7b5d17500e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3163,7 +3163,7 @@ Transform:
   m_GameObject: {fileID: 1591885233}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.13, y: -0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3230,7 +3230,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3241,7 +3241,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1591885241
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3276,17 +3276,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0148641765, y: 0.03379628}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.37, y: 0.5}
+    oldSize: {x: 1.45, y: 1.59}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4837144, y: 0.5766085}
   m_EdgeRadius: 0
 --- !u!114 &1591885242
 MonoBehaviour:
@@ -3311,6 +3311,7 @@ GameObject:
   - component: {fileID: 1649220923}
   - component: {fileID: 1649220925}
   - component: {fileID: 1649220924}
+  - component: {fileID: 1649220926}
   m_Layer: 6
   m_Name: GroundTilemap
   m_TagString: Ground
@@ -3781,6 +3782,44 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1649220926
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649220922}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1 &1719560890
 GameObject:
   m_ObjectHideFlags: 0
@@ -3941,7 +3980,7 @@ Transform:
   m_GameObject: {fileID: 1782375160}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.55, y: -0.35, z: 0}
+  m_LocalPosition: {x: -6.71, y: -0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3988,7 +4027,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1933639504}
   - component: {fileID: 1933639505}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Transition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4205,6 +4244,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 64675927}
+  - {fileID: 127026063}
   - {fileID: 1591885235}
   - {fileID: 8209964662961253355}
   - {fileID: 1777515406}
@@ -4218,4 +4258,3 @@ SceneRoots:
   - {fileID: 1008277356}
   - {fileID: 860548186}
   - {fileID: 838682690}
-  - {fileID: 127026063}
