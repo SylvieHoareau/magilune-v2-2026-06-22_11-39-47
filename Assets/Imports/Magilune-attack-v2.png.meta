@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: c0a1516576d9f49249d89bfbc361436e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2007722533285475310
+    second: Magilune-attack-v2_0
+  - first:
+      213: -7861764311154007793
+    second: Magilune-attack-v2_1
+  - first:
+      213: 309735609229140129
+    second: Magilune-attack-v2_2
+  - first:
+      213: -3309821841573450900
+    second: Magilune-attack-v2_3
+  - first:
+      213: -4707670436112395596
+    second: Magilune-attack-v2_4
+  - first:
+      213: -7234578515859653675
+    second: Magilune-attack-v2_5
+  - first:
+      213: -6161444848673301803
+    second: Magilune-attack-v2_6
+  - first:
+      213: -8121020861196058807
+    second: Magilune-attack-v2_7
+  - first:
+      213: -8536154523707036869
+    second: Magilune-attack-v2_8
+  - first:
+      213: -806156160924173147
+    second: Magilune-attack-v2_9
+  - first:
+      213: -1512277867128887399
+    second: Magilune-attack-v2_10
+  - first:
+      213: -427262005155101433
+    second: Magilune-attack-v2_11
+  - first:
+      213: 7101015757598643639
+    second: Magilune-attack-v2_12
+  - first:
+      213: 912472658009771704
+    second: Magilune-attack-v2_13
+  - first:
+      213: 5251333875742047291
+    second: Magilune-attack-v2_14
+  - first:
+      213: -3392543861051096253
+    second: Magilune-attack-v2_15
+  - first:
+      213: 5032926200425458221
+    second: Magilune-attack-v2_16
+  - first:
+      213: 8387246863266535154
+    second: Magilune-attack-v2_17
+  - first:
+      213: 8666027002330062139
+    second: Magilune-attack-v2_18
+  - first:
+      213: -576267331641464379
+    second: Magilune-attack-v2_19
+  - first:
+      213: 2979924474707114573
+    second: Magilune-attack-v2_20
+  - first:
+      213: 8687081598682631303
+    second: Magilune-attack-v2_21
+  - first:
+      213: -8534400428509878774
+    second: Magilune-attack-v2_22
+  - first:
+      213: 2090420035158722118
+    second: Magilune-attack-v2_23
+  - first:
+      213: -3355441089115090253
+    second: Magilune-attack-v2_24
+  - first:
+      213: 7422453620223145722
+    second: Magilune-attack-v2_25
+  - first:
+      213: -7891231952116801864
+    second: Magilune-attack-v2_26
+  - first:
+      213: 3454305579662152943
+    second: Magilune-attack-v2_27
+  - first:
+      213: -3018899083831652723
+    second: Magilune-attack-v2_28
+  - first:
+      213: -2366827535597940053
+    second: Magilune-attack-v2_29
+  - first:
+      213: 8744941984316607396
+    second: Magilune-attack-v2_30
+  - first:
+      213: 6627753468806152612
+    second: Magilune-attack-v2_31
+  - first:
+      213: -347028689070770746
+    second: Magilune-attack-v2_32
+  - first:
+      213: -726273257114299732
+    second: Magilune-attack-v2_33
+  - first:
+      213: 5648806542687985981
+    second: Magilune-attack-v2_34
+  - first:
+      213: 2461999781175526454
+    second: Magilune-attack-v2_35
+  - first:
+      213: 3121717577422217518
+    second: Magilune-attack-v2_36
+  - first:
+      213: -7006688653549459583
+    second: Magilune-attack-v2_37
+  - first:
+      213: -8043989684742411135
+    second: Magilune-attack-v2_38
+  - first:
+      213: 4851557795804861106
+    second: Magilune-attack-v2_39
+  - first:
+      213: 9181870436247852517
+    second: Magilune-attack-v2_40
+  - first:
+      213: -4421541898246677280
+    second: Magilune-attack-v2_41
+  - first:
+      213: -6846785013459419474
+    second: Magilune-attack-v2_42
+  - first:
+      213: -4054047076381470948
+    second: Magilune-attack-v2_43
+  - first:
+      213: -2622301861468942993
+    second: Magilune-attack-v2_44
+  - first:
+      213: 2649505261357495516
+    second: Magilune-attack-v2_45
+  - first:
+      213: 2400744832432196431
+    second: Magilune-attack-v2_46
+  - first:
+      213: 5496706722244859371
+    second: Magilune-attack-v2_47
+  - first:
+      213: 6885032169676265125
+    second: Magilune-attack-v2_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Magilune-attack-v2_0
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1069
+        width: 154
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21cc8fb4ef22324e0800000000000000
+      internalID: -2007722533285475310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1069
+        width: 155
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0162dd230765e290800000000000000
+      internalID: -7861764311154007793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_2
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1069
+        width: 155
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0646245e66c4400800000000000000
+      internalID: 309735609229140129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_3
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 1067
+        width: 159
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b6f2f32962112d0800000000000000
+      internalID: -3309821841573450900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_4
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1067
+        width: 175
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b299ef3eaefaaeb0800000000000000
+      internalID: -4707670436112395596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 811
+        width: 182
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db33869b2d999b90800000000000000
+      internalID: -7234578515859653675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_6
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 807
+        width: 164
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dadaab0e862e7aa0800000000000000
+      internalID: -6161444848673301803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_7
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 879
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f3fd2cd865c4f80800000000000000
+      internalID: -8121020861196058807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_8
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 807
+        width: 152
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b299aefac798980800000000000000
+      internalID: -8536154523707036869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_9
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 916
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac3f9a2e35ffc4f0800000000000000
+      internalID: -806156160924173147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_10
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 807
+        width: 171
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997e810da4f430be0800000000000000
+      internalID: -1512277867128887399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_11
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 910
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70585b4587f021af0800000000000000
+      internalID: -427262005155101433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_12
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 807
+        width: 158
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b55e107530eb8260800000000000000
+      internalID: 7101015757598643639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_13
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 920
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8becde74c01c9ac00800000000000000
+      internalID: 912472658009771704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_14
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 884
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c7494565c70e840800000000000000
+      internalID: 5251333875742047291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_15
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 899
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3430e1535534be0d0800000000000000
+      internalID: -3392543861051096253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_16
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 897
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2aad15b6bb88d540800000000000000
+      internalID: 5032926200425458221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_17
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 906
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f6d288a59c756470800000000000000
+      internalID: 8387246863266535154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_18
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 901
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d93dfd4a9e34870800000000000000
+      internalID: 8666027002330062139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_19
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 841
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c929d14aefa008f0800000000000000
+      internalID: -576267331641464379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_20
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 841
+        width: 67
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4af86c7581da5920800000000000000
+      internalID: 2979924474707114573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_21
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 875
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c8f4810b6be8870800000000000000
+      internalID: 8687081598682631303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_22
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 870
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a062ab70708bf8980800000000000000
+      internalID: -8534400428509878774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_23
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 874
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646cefa42f9a20d10800000000000000
+      internalID: 2090420035158722118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_24
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 846
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b29b8a7b141f61d0800000000000000
+      internalID: -3355441089115090253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_25
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 837
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af67633ed3ad10760800000000000000
+      internalID: 7422453620223145722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_26
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 842
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be9ddd5956bc7290800000000000000
+      internalID: -7891231952116801864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_27
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 551
+        width: 194
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4996d7f9820ff20800000000000000
+      internalID: 3454305579662152943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_28
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 619
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e467f2747ba16d0800000000000000
+      internalID: -3018899083831652723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_29
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 610
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2521875e6572fd0800000000000000
+      internalID: -2366827535597940053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_30
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 616
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab479ce6664c5970800000000000000
+      internalID: 8744941984316607396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_31
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 551
+        width: 172
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1cd0f1aa28afb50800000000000000
+      internalID: 6627753468806152612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_32
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 551
+        width: 171
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c53115fe3b1f2bf0800000000000000
+      internalID: -347028689070770746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_33
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 551
+        width: 174
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca216d31252cbe5f0800000000000000
+      internalID: -726273257114299732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_34
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 551
+        width: 179
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d31e1d53f97946e40800000000000000
+      internalID: 5648806542687985981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_35
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 584
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6348e0ab1c7ca2220800000000000000
+      internalID: 2461999781175526454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_36
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 589
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21285bd891925b20800000000000000
+      internalID: 3121717577422217518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_37
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 295
+        width: 179
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187ac69eacd33ce90800000000000000
+      internalID: -7006688653549459583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_38
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 295
+        width: 186
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ca50820020e5090800000000000000
+      internalID: -8043989684742411135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_39
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 294
+        width: 185
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2d9325c12345340800000000000000
+      internalID: 4851557795804861106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_40
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 295
+        width: 169
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5d63e938e8c6f70800000000000000
+      internalID: 9181870436247852517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_41
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 295
+        width: 197
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec1083e11783a2c0800000000000000
+      internalID: -4421541898246677280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_42
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 392
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae784b5e455bf0a0800000000000000
+      internalID: -6846785013459419474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_43
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 349
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f429dc9a12db7c0800000000000000
+      internalID: -4054047076381470948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_44
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 40
+        width: 158
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d4c4db956bb9bd0800000000000000
+      internalID: -2622301861468942993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_45
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 40
+        width: 158
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4fdbd5ffee4c420800000000000000
+      internalID: 2649505261357495516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_46
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 40
+        width: 157
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4bc97594b8215120800000000000000
+      internalID: 2400744832432196431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_47
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 40
+        width: 158
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be518ed14a9384c40800000000000000
+      internalID: 5496706722244859371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magilune-attack-v2_48
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 40
+        width: 161
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6d0b4a74c8c8f50800000000000000
+      internalID: 6885032169676265125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Magilune-attack-v2_0: -2007722533285475310
+      Magilune-attack-v2_1: -7861764311154007793
+      Magilune-attack-v2_10: -1512277867128887399
+      Magilune-attack-v2_11: -427262005155101433
+      Magilune-attack-v2_12: 7101015757598643639
+      Magilune-attack-v2_13: 912472658009771704
+      Magilune-attack-v2_14: 5251333875742047291
+      Magilune-attack-v2_15: -3392543861051096253
+      Magilune-attack-v2_16: 5032926200425458221
+      Magilune-attack-v2_17: 8387246863266535154
+      Magilune-attack-v2_18: 8666027002330062139
+      Magilune-attack-v2_19: -576267331641464379
+      Magilune-attack-v2_2: 309735609229140129
+      Magilune-attack-v2_20: 2979924474707114573
+      Magilune-attack-v2_21: 8687081598682631303
+      Magilune-attack-v2_22: -8534400428509878774
+      Magilune-attack-v2_23: 2090420035158722118
+      Magilune-attack-v2_24: -3355441089115090253
+      Magilune-attack-v2_25: 7422453620223145722
+      Magilune-attack-v2_26: -7891231952116801864
+      Magilune-attack-v2_27: 3454305579662152943
+      Magilune-attack-v2_28: -3018899083831652723
+      Magilune-attack-v2_29: -2366827535597940053
+      Magilune-attack-v2_3: -3309821841573450900
+      Magilune-attack-v2_30: 8744941984316607396
+      Magilune-attack-v2_31: 6627753468806152612
+      Magilune-attack-v2_32: -347028689070770746
+      Magilune-attack-v2_33: -726273257114299732
+      Magilune-attack-v2_34: 5648806542687985981
+      Magilune-attack-v2_35: 2461999781175526454
+      Magilune-attack-v2_36: 3121717577422217518
+      Magilune-attack-v2_37: -7006688653549459583
+      Magilune-attack-v2_38: -8043989684742411135
+      Magilune-attack-v2_39: 4851557795804861106
+      Magilune-attack-v2_4: -4707670436112395596
+      Magilune-attack-v2_40: 9181870436247852517
+      Magilune-attack-v2_41: -4421541898246677280
+      Magilune-attack-v2_42: -6846785013459419474
+      Magilune-attack-v2_43: -4054047076381470948
+      Magilune-attack-v2_44: -2622301861468942993
+      Magilune-attack-v2_45: 2649505261357495516
+      Magilune-attack-v2_46: 2400744832432196431
+      Magilune-attack-v2_47: 5496706722244859371
+      Magilune-attack-v2_48: 6885032169676265125
+      Magilune-attack-v2_5: -7234578515859653675
+      Magilune-attack-v2_6: -6161444848673301803
+      Magilune-attack-v2_7: -8121020861196058807
+      Magilune-attack-v2_8: -8536154523707036869
+      Magilune-attack-v2_9: -806156160924173147
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
