@@ -2,126 +2,245 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Déplacement, saut (partie 1) et descente de plateforme (Bas + Interact).
+/// Le jetpack est géré par <see cref="PlayerJetpack"/>, le tir par <see cref="PlayerGun"/>.
+///
+/// PlayerInput (Invoke Unity Events) :
+///   Move     → OnMove
+///   Jump     → OnJump
+///   Interact → OnInteract
+///   Shoot    → OnShoot
+/// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Collider2D))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Déplacement")]
-    [SerializeField] private float moveSpeed = 8f;
-    private float horizontalInput;
+    [Tooltip("Unités / seconde. 6–8 convient à un platformer enfant.")]
+    [SerializeField] private float moveSpeed = 7f;
 
-    [Header("Saut (Première partie)")]
-    [SerializeField] private float jumpForce = 12f;
+    [Header("Saut (première partie du niveau)")]
+    [Tooltip("Vitesse verticale appliquée au saut. Avec Gravity Scale 3, 12–16 est un bon départ.")]
+    [SerializeField] private float jumpForce = 14f;
+    [Tooltip("Transform vide placé sous les pieds du joueur.")]
     [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundCheckRadius = 0.18f;
+    [Tooltip("Layers Ground + PlatformPassThrough.")]
     [SerializeField] private LayerMask groundLayer;
+    [Tooltip("true en partie 1, false au milieu du niveau (trauma à la jambe).")]
     [SerializeField] private bool canJump = true;
-    private bool isGrounded;
+    [SerializeField] private float coyoteTime = 0.12f;
+    [SerializeField] private float jumpBufferTime = 0.12f;
 
-    [Header("Jetpack (Seconde partie)")]
-    [SerializeField] private bool hasJetpack = false;
-    [SerializeField] private float jetpackForce = 15f;
-    [SerializeField] private float maxJetpackSpeed = 10f;
-    private bool isUsingJetpack;
-
-    [Header("Plateformes Traversables")]
+    [Header("Plateformes traversables")]
+    [Tooltip("Layer des plateformes one-way (PlatformPassThrough).")]
     [SerializeField] private LayerMask platformLayer;
-    private Collider2D playerCollider;
+    [SerializeField] private float dropThroughDuration = 0.35f;
+
+    [Header("Feedback")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private AudioClip jumpClip;
+    [SerializeField] private ParticleSystem jumpDust;
 
     private Rigidbody2D rb;
+    private Collider2D playerCollider;
+    private PlayerGun playerGun;
+    private PlayerJetpack playerJetpack;
+    private Vector2 moveInput;
+    private float coyoteCounter;
+    private float jumpBufferCounter;
+    private bool isGrounded;
+    private bool facingRight = true;
+    private float baseScaleX = 1f;
+    private Coroutine dropRoutine;
+
+    private static readonly int AnimSpeed = Animator.StringToHash("Speed");
+    private static readonly int AnimGrounded = Animator.StringToHash("IsGrounded");
+    private static readonly int AnimJump = Animator.StringToHash("Jump");
+
+    public bool IsGrounded => isGrounded;
+    public bool FacingRight => facingRight;
+    public Vector2 MoveInput => moveInput;
+    public bool CanJump => canJump;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<Collider2D>();
+        playerGun = GetComponent<PlayerGun>();
+        playerJetpack = GetComponent<PlayerJetpack>();
+        baseScaleX = Mathf.Abs(transform.localScale.x);
+        if (baseScaleX < 0.01f) baseScaleX = 1f;
     }
 
     private void Update()
     {
-        // Vérification si le joueur touche le sol
-        if (groundCheck != null)
-        {
-            isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        }
+        CheckGrounded();
+
+        if (isGrounded) coyoteCounter = coyoteTime;
+        else coyoteCounter -= Time.deltaTime;
+
+        if (jumpBufferCounter > 0f) jumpBufferCounter -= Time.deltaTime;
+
+        if (canJump && jumpBufferCounter > 0f && coyoteCounter > 0f)
+            PerformJump();
+
+        UpdateAnimator();
     }
 
     private void FixedUpdate()
     {
-        // Déplacement horizontal
-        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
-
-        // Mouvement du Jetpack
-        if (hasJetpack && isUsingJetpack)
-        {
-            ApplyJetpackForce();
-        }
+        float x = moveInput.x * moveSpeed;
+        rb.linearVelocity = new Vector2(x, rb.linearVelocity.y);
+        UpdateFacing();
     }
 
-    #region Input Handlers (New Input System)
+    #region Input (New Input System — Invoke Unity Events)
 
-    // Appelé par l'action 'Move' de l'Input System
     public void OnMove(InputAction.CallbackContext context)
     {
-        Vector2 input = context.ReadValue<Vector2>();
-        horizontalInput = input.x;
-
-        // Détection de la combinaison : Bas + Interaction pour descendre d'une plateforme
-        if (input.y < -0.5f && context.started)
-        {
-            StartCoroutine(DisablePlatformCollision());
-        }
+        moveInput = context.ReadValue<Vector2>();
     }
 
-    // Appelé par l'action 'Jump' de l'Input System
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.started && canJump && isGrounded)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
+        if (context.started)
+            jumpBufferCounter = jumpBufferTime;
+
+        // Relâcher le bouton coupe le saut (game feel Mario / Peach).
+        if (context.canceled && rb.linearVelocity.y > 0f && canJump && (playerJetpack == null || !playerJetpack.IsThrusting))
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.45f);
     }
 
-    // Appelé par l'action 'Jetpack' ou 'Interact' de l'Input System
-    public void OnJetpack(InputAction.CallbackContext context)
+    /// <summary>
+    /// Interact : Bas + Interact = descendre d'une plateforme.
+    /// Sinon, active / relâche le jetpack (partie 2).
+    /// </summary>
+    public void OnInteract(InputAction.CallbackContext context)
     {
-        if (!hasJetpack) return;
+        bool holdingDown = moveInput.y < -0.45f;
 
-        if (context.performed)
+        if (context.started && holdingDown)
         {
-            isUsingJetpack = true;
+            DropThroughPlatform();
+            return;
         }
-        else if (context.canceled)
-        {
-            isUsingJetpack = false;
-        }
+
+        playerJetpack?.HandleInteract(context);
+    }
+
+    public void OnShoot(InputAction.CallbackContext context)
+    {
+        if (context.started)
+            playerGun?.TryShoot();
     }
 
     #endregion
 
-    #region Jetpack & Mechanics
+    #region Saut & capacités
 
-    private void ApplyJetpackForce()
+    private void PerformJump()
     {
-        // Force constante vers le haut
-        rb.AddForce(Vector2.up * jetpackForce, ForceMode2D.Force);
+        jumpBufferCounter = 0f;
+        coyoteCounter = 0f;
+        isGrounded = false;
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
 
-        // Limitation de la vitesse maximale en montée
-        if (rb.linearVelocity.y > maxJetpackSpeed)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, maxJetpackSpeed);
-        }
+        if (animator != null) animator.SetTrigger(AnimJump);
+        PlaySfx(jumpClip);
+        if (jumpDust != null) jumpDust.Play();
     }
 
-    // Permet d'activer/désactiver les capacités lors des événements du jeu
     public void SetJumpAbility(bool enable) => canJump = enable;
-    public void SetJetpackAbility(bool enable) => hasJetpack = enable;
 
-    // Traverser les plateformes vers le bas
-    private IEnumerator DisablePlatformCollision()
+    public void SetJetpackAbility(bool enable)
     {
-        // Désactive temporairement la collision entre le joueur et les plateformes traversables
-        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("PlatformPassThrough"), true);
-        yield return new WaitForSeconds(0.5f);
-        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("PlatformPassThrough"), false);
+        if (playerJetpack != null)
+            playerJetpack.SetUnlocked(enable);
     }
 
     #endregion
+
+    #region Sol, flip, plateformes
+
+    private void CheckGrounded()
+    {
+        if (groundCheck == null)
+        {
+            isGrounded = false;
+            return;
+        }
+
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer) != null;
+    }
+
+    private void UpdateFacing()
+    {
+        if (moveInput.x > 0.1f && !facingRight) Flip(true);
+        else if (moveInput.x < -0.1f && facingRight) Flip(false);
+    }
+
+    private void Flip(bool right)
+    {
+        facingRight = right;
+        Vector3 scale = transform.localScale;
+        scale.x = (right ? 1f : -1f) * baseScaleX;
+        transform.localScale = scale;
+    }
+
+    private void DropThroughPlatform()
+    {
+        if (dropRoutine != null) StopCoroutine(dropRoutine);
+        dropRoutine = StartCoroutine(DropThroughRoutine());
+    }
+
+    private IEnumerator DropThroughRoutine()
+    {
+        Collider2D platform = groundCheck != null
+            ? Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius + 0.08f, platformLayer)
+            : null;
+
+        if (platform != null)
+        {
+            PassThroughPlatform pass = platform.GetComponent<PassThroughPlatform>()
+                                       ?? platform.GetComponentInParent<PassThroughPlatform>();
+            if (pass != null)
+                pass.DropThrough();
+        }
+
+        int playerLayer = gameObject.layer;
+        int platformLayerIndex = LayerMask.NameToLayer("PlatformPassThrough");
+        if (platformLayerIndex >= 0)
+            Physics2D.IgnoreLayerCollision(playerLayer, platformLayerIndex, true);
+
+        yield return new WaitForSeconds(dropThroughDuration);
+
+        if (platformLayerIndex >= 0)
+            Physics2D.IgnoreLayerCollision(playerLayer, platformLayerIndex, false);
+
+        dropRoutine = null;
+    }
+
+    #endregion
+
+    private void UpdateAnimator()
+    {
+        if (animator == null) return;
+        animator.SetFloat(AnimSpeed, Mathf.Abs(moveInput.x));
+        animator.SetBool(AnimGrounded, isGrounded);
+    }
+
+    private static void PlaySfx(AudioClip clip)
+    {
+        if (clip == null || AudioManager.Instance == null) return;
+        AudioManager.Instance.PlaySFX(clip);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck == null) return;
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+    }
 }

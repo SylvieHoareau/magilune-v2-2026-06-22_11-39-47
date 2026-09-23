@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - Enemy
+  - PlatformPassThrough
+  - Projectile
+  - Hazard
+  - Lava
+  - Poison
   layers:
   - Default
   - TransparentFX
@@ -15,8 +21,8 @@ TagManager:
   - Background
   - Ground
   - Player
-  - 
-  - 
+  - PlatformPassThrough
+  - Projectile
   - 
   - 
   - 
