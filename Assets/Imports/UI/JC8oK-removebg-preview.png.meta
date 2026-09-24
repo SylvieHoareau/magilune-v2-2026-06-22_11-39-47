@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 971e0056210c6b73798c7f0860073c25
+guid: b60b8b3fed37a4236bdc4b986878062d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 913945124854933198
-    second: attack_04_preview_0
+      213: -6318629630432755192
+    second: JC8oK-removebg-preview_0
   - first:
-      213: -3724739396728656950
-    second: attack_04_preview_1
+      213: 3797714763356476335
+    second: JC8oK-removebg-preview_1
+  - first:
+      213: 5421043587543747504
+    second: JC8oK-removebg-preview_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -129,45 +132,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: attack_04_preview_0
+      name: EmptyHeart
       rect:
         serializedVersion: 2
-        x: 71
-        y: 91
-        width: 178
-        height: 102
+        x: 74
+        y: 124
+        width: 151
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec6ad2faf3cfeac00800000000000000
-      internalID: 913945124854933198
+      spriteID: 8024cc224d7bf48a0800000000000000
+      internalID: -6318629630432755192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_04_preview_1
+      name: FullHeart1
       rect:
         serializedVersion: 2
-        x: 55
-        y: 19
-        width: 150
-        height: 70
+        x: 227
+        y: 125
+        width: 149
+        height: 142
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: acbe511d0411f4cc0800000000000000
-      internalID: -3724739396728656950
+      spriteID: fa39e14c47134b430800000000000000
+      internalID: 3797714763356476335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FullHeart2
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 127
+        width: 149
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb4473cb6a6b3b40800000000000000
+      internalID: 5421043587543747504
       vertices: []
       indices: 
       edges: []
@@ -176,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 183bf846f00f877aa9ad1e16355c88a7
     internalID: 0
     vertices: []
     indices: 
@@ -186,8 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      attack_04_preview_0: 913945124854933198
-      attack_04_preview_1: -3724739396728656950
+      EmptyHeart: -6318629630432755192
+      FullHeart1: 3797714763356476335
+      FullHeart2: 5421043587543747504
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
