@@ -133,7 +133,10 @@ public class PlayerController : MonoBehaviour
     public void OnShoot(InputAction.CallbackContext context)
     {
         if (context.started)
+        {
             playerGun?.TryShoot();
+            if (animator != null) animator.SetTrigger("Shoot");
+        }
     }
 
     #endregion

@@ -25,7 +25,7 @@ public class PlayerGun : MonoBehaviour
     private float nextFireTime;
     private Collider2D playerCollider;
     private PlayerController playerController;
-    private static readonly int AnimShoot = Animator.StringToHash("Attack");
+    private static readonly int AnimShoot = Animator.StringToHash("Shoot");
 
     private void Awake()
     {
@@ -57,7 +57,7 @@ public class PlayerGun : MonoBehaviour
         IgnorePlayerCollision(projectile);
 
         if (muzzleFlash != null) muzzleFlash.Play();
-        if (animator != null) animator.SetTrigger("Attack");
+        if (animator != null) animator.SetTrigger(AnimShoot);
         PlaySfx(shootClip);
         return true;
     }

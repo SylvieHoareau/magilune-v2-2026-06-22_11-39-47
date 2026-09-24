@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: ece6757b908dbddc7a2285dc158d3298
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3658599864999516478
+    second: volcano_layer_2_near_0
+  - first:
+      213: 9049664999406059497
+    second: volcano_layer_2_near_1
+  - first:
+      213: 8101996261665724363
+    second: volcano_layer_2_near_2
+  - first:
+      213: 5525814971611101835
+    second: volcano_layer_2_near_3
+  - first:
+      213: -420759596277610084
+    second: volcano_layer_2_near_4
+  - first:
+      213: 4601717822483729845
+    second: volcano_layer_2_near_5
+  - first:
+      213: -5303306369566091244
+    second: volcano_layer_2_near_6
+  - first:
+      213: -9029545467065863844
+    second: volcano_layer_2_near_7
+  - first:
+      213: 6600649792022738195
+    second: volcano_layer_2_near_8
+  - first:
+      213: 1789850180559575591
+    second: volcano_layer_2_near_9
+  - first:
+      213: 3624730964466875520
+    second: volcano_layer_2_near_10
+  - first:
+      213: -3741310039584717178
+    second: volcano_layer_2_near_11
+  - first:
+      213: -2254102891512469189
+    second: volcano_layer_2_near_12
+  - first:
+      213: 5874322598411555126
+    second: volcano_layer_2_near_13
+  - first:
+      213: -3668693753215161106
+    second: volcano_layer_2_near_14
+  - first:
+      213: -3494247068785700784
+    second: volcano_layer_2_near_15
+  - first:
+      213: -928262103703074539
+    second: volcano_layer_2_near_16
+  - first:
+      213: -5687835382123814724
+    second: volcano_layer_2_near_17
+  - first:
+      213: 2862738467293174527
+    second: volcano_layer_2_near_18
+  - first:
+      213: 1129288421703683880
+    second: volcano_layer_2_near_19
+  - first:
+      213: -2197650758508213932
+    second: volcano_layer_2_near_20
+  - first:
+      213: 1324800119349072626
+    second: volcano_layer_2_near_21
+  - first:
+      213: -6840621247452506925
+    second: volcano_layer_2_near_22
+  - first:
+      213: 6481439664476472369
+    second: volcano_layer_2_near_23
+  - first:
+      213: 6280144468121332702
+    second: volcano_layer_2_near_24
+  - first:
+      213: 3758189546005965612
+    second: volcano_layer_2_near_25
+  - first:
+      213: -207368937878845483
+    second: volcano_layer_2_near_26
+  - first:
+      213: 7722485280732668306
+    second: volcano_layer_2_near_27
+  - first:
+      213: 9167978910108470865
+    second: volcano_layer_2_near_28
+  - first:
+      213: 2017768229975191697
+    second: volcano_layer_2_near_29
+  - first:
+      213: -4576425007234047207
+    second: volcano_layer_2_near_30
+  - first:
+      213: 3780463339240245451
+    second: volcano_layer_2_near_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: volcano_layer_2_near_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 507
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6696f8eca0a3dc0800000000000000
+      internalID: -3658599864999516478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 490
+        width: 21
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef32e9ae5ed69d70800000000000000
+      internalID: 9049664999406059497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_2
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 474
+        width: 22
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7d02c7ca2107070800000000000000
+      internalID: 8101996261665724363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_3
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 517
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a3a6d8073afac40800000000000000
+      internalID: 5525814971611101835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_4
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 390
+        width: 22
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9949006069292af0800000000000000
+      internalID: -420759596277610084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_5
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 407
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd0ab58af59cdf30800000000000000
+      internalID: 4601717822483729845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_6
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 351
+        width: 22
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41852fa74fed666b0800000000000000
+      internalID: -5303306369566091244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_7
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 382
+        width: 19
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51fc400d3c90b280800000000000000
+      internalID: -9029545467065863844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_8
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 389
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315754c93083a9b50800000000000000
+      internalID: 6600649792022738195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_9
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 297
+        width: 24
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a1c659143d6d810800000000000000
+      internalID: 1789850180559575591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_10
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 352
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c38678b91ad4230800000000000000
+      internalID: 3624730964466875520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_11
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 293
+        width: 16
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68643ff5752341cc0800000000000000
+      internalID: -3741310039584717178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_12
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 259
+        width: 10
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39e738ec51d7b0e0800000000000000
+      internalID: -2254102891512469189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_13
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 232
+        width: 113
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631de5e9749c58150800000000000000
+      internalID: 5874322598411555126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_14
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 239
+        width: 14
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec6ae1187e261dc0800000000000000
+      internalID: -3668693753215161106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_15
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 226
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0501493edc0f18fc0800000000000000
+      internalID: -3494247068785700784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_16
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 221
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519425ae8862e13f0800000000000000
+      internalID: -928262103703074539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_17
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 163
+        width: 23
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0ac9bfadfb011b0800000000000000
+      internalID: -5687835382123814724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_18
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 219
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa1bd3f77d7ab720800000000000000
+      internalID: 2862738467293174527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_19
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 157
+        width: 113
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f0c9816d90caf00800000000000000
+      internalID: 1129288421703683880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_20
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 162
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45900ce57406081e0800000000000000
+      internalID: -2197650758508213932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_21
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 124
+        width: 14
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f2523080b2a26210800000000000000
+      internalID: 1324800119349072626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_22
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 169
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d49a96f73b3111a0800000000000000
+      internalID: -6840621247452506925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_23
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 125
+        width: 160
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1344f32e803b2f950800000000000000
+      internalID: 6481439664476472369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_24
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 140
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edba180ce1e872750800000000000000
+      internalID: 6280144468121332702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_25
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 147
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ba548fa75c72430800000000000000
+      internalID: 3758189546005965612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_26
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 43
+        width: 113
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d70848bc074f1df0800000000000000
+      internalID: -207368937878845483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_27
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 64
+        width: 9
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 291e0458277cb2b60800000000000000
+      internalID: 7722485280732668306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_28
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 72
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ec945ae343b3f70800000000000000
+      internalID: 9167978910108470865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_29
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 60
+        width: 164
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1907dbab38d800c10800000000000000
+      internalID: 2017768229975191697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_30
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 45
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913a99ee3b54d70c0800000000000000
+      internalID: -4576425007234047207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano_layer_2_near_31
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 37
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc84dc59067e67430800000000000000
+      internalID: 3780463339240245451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      volcano_layer_2_near_0: -3658599864999516478
+      volcano_layer_2_near_1: 9049664999406059497
+      volcano_layer_2_near_10: 3624730964466875520
+      volcano_layer_2_near_11: -3741310039584717178
+      volcano_layer_2_near_12: -2254102891512469189
+      volcano_layer_2_near_13: 5874322598411555126
+      volcano_layer_2_near_14: -3668693753215161106
+      volcano_layer_2_near_15: -3494247068785700784
+      volcano_layer_2_near_16: -928262103703074539
+      volcano_layer_2_near_17: -5687835382123814724
+      volcano_layer_2_near_18: 2862738467293174527
+      volcano_layer_2_near_19: 1129288421703683880
+      volcano_layer_2_near_2: 8101996261665724363
+      volcano_layer_2_near_20: -2197650758508213932
+      volcano_layer_2_near_21: 1324800119349072626
+      volcano_layer_2_near_22: -6840621247452506925
+      volcano_layer_2_near_23: 6481439664476472369
+      volcano_layer_2_near_24: 6280144468121332702
+      volcano_layer_2_near_25: 3758189546005965612
+      volcano_layer_2_near_26: -207368937878845483
+      volcano_layer_2_near_27: 7722485280732668306
+      volcano_layer_2_near_28: 9167978910108470865
+      volcano_layer_2_near_29: 2017768229975191697
+      volcano_layer_2_near_3: 5525814971611101835
+      volcano_layer_2_near_30: -4576425007234047207
+      volcano_layer_2_near_31: 3780463339240245451
+      volcano_layer_2_near_4: -420759596277610084
+      volcano_layer_2_near_5: 4601717822483729845
+      volcano_layer_2_near_6: -5303306369566091244
+      volcano_layer_2_near_7: -9029545467065863844
+      volcano_layer_2_near_8: 6600649792022738195
+      volcano_layer_2_near_9: 1789850180559575591
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

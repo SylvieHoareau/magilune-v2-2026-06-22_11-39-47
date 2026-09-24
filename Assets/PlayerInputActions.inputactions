@@ -34,16 +34,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Jetpack",
-                    "type": "Button",
-                    "id": "72928487-cc61-4c69-9bd5-f0a9a5aaf47e",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "OnInteract",
+                    "name": "Interact",
                     "type": "Button",
                     "id": "fdf41a1d-81e5-48f5-b660-54483288c042",
                     "expectedControlType": "",
@@ -209,45 +200,23 @@
                 },
                 {
                     "name": "",
-                    "id": "d299f56e-355f-4e37-af79-47537ec7bdcc",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jetpack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "23573d01-362b-4872-a7be-9b8ef99cb8a5",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jetpack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "86084bc5-40da-4592-ba76-e2a057203d75",
                     "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "OnInteract",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "7f20bd33-5678-47f6-9380-5802f1c6298e",
-                    "path": "<Keyboard>/i",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "OnInteract",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
