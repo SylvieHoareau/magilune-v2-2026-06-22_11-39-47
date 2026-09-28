@@ -15,7 +15,10 @@ public class ParallaxLayer : MonoBehaviour
 
     void Start()
     {
-        cam = Camera.main.transform;
+        // Plus sûr avec Cinemachine
+        cam = Camera.main != null ? Camera.main.transform : null;
+        if (cam == null)
+            Debug.LogWarning("ParallaxLayer: aucune caméra trouvée", this);
         startPos = transform.position;
         startZ = transform.position.z;
     }
