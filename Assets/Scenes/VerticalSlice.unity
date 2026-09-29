@@ -3880,6 +3880,7 @@ GameObject:
   - component: {fileID: 698159929}
   - component: {fileID: 698159928}
   - component: {fileID: 698159930}
+  - component: {fileID: 698159931}
   - component: {fileID: 698159927}
   m_Layer: 0
   m_Name: AbilityZone_GainJetpack
@@ -4026,6 +4027,25 @@ MonoBehaviour:
   disableJetpack: 0
   triggerOnce: 1
   feedbackClip: {fileID: 0}
+--- !u!114 &698159931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698159926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d81209da783199238864c9f52c2f21f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AbilityFeedback
+  jumpIconActive: {fileID: 0}
+  jumpIconDisabled: {fileID: 0}
+  jetpackIcon: {fileID: 0}
+  tutorialPanel: {fileID: 0}
+  powerUpClip: {fileID: 0}
+  powerUpParticles: {fileID: 0}
+  freezeDuration: 0.5
 --- !u!1 &747855861
 GameObject:
   m_ObjectHideFlags: 0
@@ -17541,6 +17561,7 @@ GameObject:
   - component: {fileID: 2095720411}
   - component: {fileID: 2095720410}
   - component: {fileID: 2095720412}
+  - component: {fileID: 2095720413}
   - component: {fileID: 2095720409}
   m_Layer: 0
   m_Name: AbilityZone_LoseJump
@@ -17687,6 +17708,25 @@ MonoBehaviour:
   disableJetpack: 0
   triggerOnce: 1
   feedbackClip: {fileID: 0}
+--- !u!114 &2095720413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095720408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d81209da783199238864c9f52c2f21f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AbilityFeedback
+  jumpIconActive: {fileID: 0}
+  jumpIconDisabled: {fileID: 0}
+  jetpackIcon: {fileID: 0}
+  tutorialPanel: {fileID: 0}
+  powerUpClip: {fileID: 0}
+  powerUpParticles: {fileID: 0}
+  freezeDuration: 0.5
 --- !u!1 &2146139036
 GameObject:
   m_ObjectHideFlags: 0

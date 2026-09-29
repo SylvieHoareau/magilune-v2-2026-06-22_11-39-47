@@ -38,6 +38,10 @@ public class AbilityZone : MonoBehaviour
         if (enableJetpack) controller.SetJetpackAbility(true);
         if (disableJetpack) controller.SetJetpackAbility(false);
 
+        AbilityFeedback feedback = FindFirstObjectByType<AbilityFeedback>();
+        if (disableJump) feedback?.OnJumpLost();
+        if (enableJetpack) feedback?.OnJetpackGained();
+
         if (jetpack != null)
         {
             if (enableJetpack) jetpack.SetUnlocked(true);
