@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
+
 /// <summary>
 /// Menu pause : Pause (Escape / Start) pour mettre en pause ou reprendre,
 /// et bouton pour retourner au menu principal.
@@ -16,6 +17,8 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private string mainMenuSceneName = "MainMenu";
 
     private bool isPaused;
+
+    public static bool IsGamePaused { get; private set; }
 
     private void Awake()
     {

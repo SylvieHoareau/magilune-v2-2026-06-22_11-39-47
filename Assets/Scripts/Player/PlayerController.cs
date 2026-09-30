@@ -64,6 +64,9 @@ public class PlayerController : MonoBehaviour
     public Vector2 MoveInput => moveInput;
     public bool CanJump => canJump;
 
+    // En haut de la classe
+    public static bool IsGamePaused { get; set; }
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -98,13 +101,23 @@ public class PlayerController : MonoBehaviour
 
     #region Input (New Input System — Invoke Unity Events)
 
+    /// <summary>
+    /// Gère le déplacement du joueur.
+    /// </summary>
     public void OnMove(InputAction.CallbackContext context)
     {
+        if (IsGamePaused) return;   // ← garde en premier
+
         moveInput = context.ReadValue<Vector2>();
     }
 
+    /// <summary>
+    /// Gère le saut du joueur.
+    /// </summary>
     public void OnJump(InputAction.CallbackContext context)
     {
+        if (IsGamePaused) return;   // ← garde en premier
+
         if (context.started)
             jumpBufferCounter = jumpBufferTime;
 
@@ -119,6 +132,8 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     public void OnInteract(InputAction.CallbackContext context)
     {
+        if (IsGamePaused) return;   // ← garde en premier
+
         bool holdingDown = moveInput.y < -0.45f;
 
         if (context.started && holdingDown)
@@ -130,8 +145,13 @@ public class PlayerController : MonoBehaviour
         playerJetpack?.HandleInteract(context);
     }
 
+    /// <summary>
+    /// Gère le tir du joueur.
+    /// </summary>
     public void OnShoot(InputAction.CallbackContext context)
     {
+        if (IsGamePaused) return;   // ← garde en premier
+
         if (context.started)
         {
             playerGun?.TryShoot();
