@@ -4,11 +4,21 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     [Header("Scene Settings")]
-    [SerializeField] private string gameSceneName = "Level1"; // mets le nom exact de ta scène de jeu
+    [SerializeField] private string gameSceneName = "Level1";
+
+    [Header("Audio")]
+    [SerializeField] private AudioClip menuMusic;
+
+    void Start()
+    {
+        if (AudioManager.Instance != null && menuMusic != null)
+        {
+            AudioManager.Instance.PlayMusic(menuMusic);
+        }
+    }
 
     public void PlayGame()
     {
-        // Charge la scène de jeu
         SceneManager.LoadScene(gameSceneName);
     }
 
