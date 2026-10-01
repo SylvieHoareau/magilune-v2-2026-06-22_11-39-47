@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: d33e7f4e02c1feb64857f7c39451ad55
+guid: 5e8be902d996ec1959e33a366872552b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5088607766920404157
-    second: jump-icon_0
-  - first:
-      213: -6036145608101571571
-    second: jump-icon_1
-  - first:
-      213: -5788367637298300027
-    second: jump-icon_2
-  - first:
-      213: -183685250723721756
-    second: jump-icon_3
-  - first:
-      213: 2100990073689903897
-    second: jump-icon_4
+      213: -6069531488776715618
+    second: magilune-pause-button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 60, y: 170, z: 60, w: 150}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -138,111 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump-icon_0
+      name: magilune-pause-button_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 446
-        width: 67
-        height: 76
+        x: 77
+        y: 176
+        width: 255
+        height: 280
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3436a635232a169b0800000000000000
-      internalID: -5088607766920404157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump-icon_1
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 82
-        width: 235
-        height: 445
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d045290ec8d4b3ca0800000000000000
-      internalID: -6036145608101571571
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump-icon_2
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 452
-        width: 58
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 58bb77d4d469bafa0800000000000000
-      internalID: -5788367637298300027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump-icon_3
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 136
-        width: 61
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4ed4228dc3b637df0800000000000000
-      internalID: -183685250723721756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump-icon_4
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 183
-        width: 55
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91398ea2757382d10800000000000000
-      internalID: 2100990073689903897
+      spriteID: e928a6ac441b4cba0800000000000000
+      internalID: -6069531488776715618
       vertices: []
       indices: 
       edges: []
@@ -251,8 +151,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -261,11 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jump-icon_0: -5088607766920404157
-      jump-icon_1: -6036145608101571571
-      jump-icon_2: -5788367637298300027
-      jump-icon_3: -183685250723721756
-      jump-icon_4: 2100990073689903897
+      magilune-pause-button_0: -6069531488776715618
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
