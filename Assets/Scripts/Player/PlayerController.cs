@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 /// Déplacement, saut (partie 1) et descente de plateforme (Bas + Interact).
 /// Le jetpack est géré par <see cref="PlayerJetpack"/>, le tir par <see cref="PlayerGun"/>.
 ///
+/// Intègre AccessibilityManager (vitesse, saut, coyote, buffer, auto-jump, hold-to-jump, haptiques).
+///
 /// PlayerInput (Invoke Unity Events) :
 ///   Move     → OnMove
 ///   Jump     → OnJump
@@ -54,6 +56,7 @@ public class PlayerController : MonoBehaviour
     private bool facingRight = true;
     private float baseScaleX = 1f;
     private Coroutine dropRoutine;
+    private bool jumpHeld; // pour hold-to-jump
 
     private static readonly int AnimSpeed = Animator.StringToHash("Speed");
     private static readonly int AnimGrounded = Animator.StringToHash("IsGrounded");
@@ -64,7 +67,10 @@ public class PlayerController : MonoBehaviour
     public Vector2 MoveInput => moveInput;
     public bool CanJump => canJump;
 
-    // En haut de la classe
+    /// <summary>
+    /// Flag de pause global (utilisé par PauseMenu et AccessibilityUI).
+    /// Quand true, le joueur ignore les inputs de gameplay.
+    /// </summary>
     public static bool IsGamePaused { get; set; }
 
     private void Awake()
@@ -79,51 +85,115 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (IsGamePaused) return;
+
         CheckGrounded();
 
-        if (isGrounded) coyoteCounter = coyoteTime;
+        // Valeurs accessibilité (fallback = valeurs Inspector)
+        float effectiveCoyote = GetEffectiveCoyoteTime();
+        float effectiveBuffer = GetEffectiveJumpBufferTime();
+
+        if (isGrounded) coyoteCounter = effectiveCoyote;
         else coyoteCounter -= Time.deltaTime;
 
         if (jumpBufferCounter > 0f) jumpBufferCounter -= Time.deltaTime;
 
+        // Saut classique (buffer + coyote)
         if (canJump && jumpBufferCounter > 0f && coyoteCounter > 0f)
             PerformJump();
+
+        // Hold-to-jump : tant que le bouton est maintenu et qu'on est au sol → saut
+        if (canJump && jumpHeld && isGrounded && IsHoldToJumpEnabled())
+            PerformJump();
+
+        // Auto-jump très simple : si on avance et qu'on est au sol, on saute automatiquement
+        // (utile pour les enfants qui ont du mal avec le timing)
+        if (canJump && IsAutoJumpEnabled() && isGrounded && Mathf.Abs(moveInput.x) > 0.3f)
+        {
+            // On laisse un petit délai pour éviter de spammer le saut
+            if (coyoteCounter >= effectiveCoyote * 0.9f)
+                PerformJump();
+        }
 
         UpdateAnimator();
     }
 
     private void FixedUpdate()
     {
-        float x = moveInput.x * moveSpeed;
+        if (IsGamePaused) return;
+
+        float effectiveSpeed = GetEffectiveMoveSpeed();
+        float x = moveInput.x * effectiveSpeed;
         rb.linearVelocity = new Vector2(x, rb.linearVelocity.y);
         UpdateFacing();
     }
 
+    #region Accessibilité – helpers
+
+    private float GetEffectiveMoveSpeed()
+    {
+        if (AccessibilityManager.Instance != null)
+            return AccessibilityManager.Instance.GetMoveSpeed(moveSpeed);
+        return moveSpeed;
+    }
+
+    private float GetEffectiveJumpForce()
+    {
+        if (AccessibilityManager.Instance != null)
+            return AccessibilityManager.Instance.GetJumpForce(jumpForce);
+        return jumpForce;
+    }
+
+    private float GetEffectiveCoyoteTime()
+    {
+        if (AccessibilityManager.Instance != null)
+            return AccessibilityManager.Instance.GetCoyoteTime();
+        return coyoteTime;
+    }
+
+    private float GetEffectiveJumpBufferTime()
+    {
+        if (AccessibilityManager.Instance != null)
+            return AccessibilityManager.Instance.GetJumpBufferTime();
+        return jumpBufferTime;
+    }
+
+    private bool IsHoldToJumpEnabled()
+    {
+        return AccessibilityManager.Instance != null && AccessibilityManager.Instance.holdToJump;
+    }
+
+    private bool IsAutoJumpEnabled()
+    {
+        return AccessibilityManager.Instance != null && AccessibilityManager.Instance.autoJump;
+    }
+
+    #endregion
+
     #region Input (New Input System — Invoke Unity Events)
 
-    /// <summary>
-    /// Gère le déplacement du joueur.
-    /// </summary>
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (IsGamePaused) return;   // ← garde en premier
-
         moveInput = context.ReadValue<Vector2>();
     }
 
-    /// <summary>
-    /// Gère le saut du joueur.
-    /// </summary>
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (IsGamePaused) return;   // ← garde en premier
-
         if (context.started)
-            jumpBufferCounter = jumpBufferTime;
+        {
+            jumpBufferCounter = GetEffectiveJumpBufferTime();
+            jumpHeld = true;
+        }
 
-        // Relâcher le bouton coupe le saut (game feel Mario / Peach).
-        if (context.canceled && rb.linearVelocity.y > 0f && canJump && (playerJetpack == null || !playerJetpack.IsThrusting))
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.45f);
+        if (context.canceled)
+        {
+            jumpHeld = false;
+
+            // Relâcher le bouton coupe le saut (game feel Mario / Peach)
+            // sauf si on est en train de thrust avec le jetpack
+            if (rb.linearVelocity.y > 0f && canJump && (playerJetpack == null || !playerJetpack.IsThrusting))
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.45f);
+        }
     }
 
     /// <summary>
@@ -132,8 +202,6 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     public void OnInteract(InputAction.CallbackContext context)
     {
-        if (IsGamePaused) return;   // ← garde en premier
-
         bool holdingDown = moveInput.y < -0.45f;
 
         if (context.started && holdingDown)
@@ -145,18 +213,10 @@ public class PlayerController : MonoBehaviour
         playerJetpack?.HandleInteract(context);
     }
 
-    /// <summary>
-    /// Gère le tir du joueur.
-    /// </summary>
     public void OnShoot(InputAction.CallbackContext context)
     {
-        if (IsGamePaused) return;   // ← garde en premier
-
         if (context.started)
-        {
             playerGun?.TryShoot();
-            if (animator != null) animator.SetTrigger("Shoot");
-        }
     }
 
     #endregion
@@ -168,11 +228,17 @@ public class PlayerController : MonoBehaviour
         jumpBufferCounter = 0f;
         coyoteCounter = 0f;
         isGrounded = false;
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
+        float force = GetEffectiveJumpForce();
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, force);
 
         if (animator != null) animator.SetTrigger(AnimJump);
         PlaySfx(jumpClip);
         if (jumpDust != null) jumpDust.Play();
+
+        // Haptique accessibilité
+        if (AccessibilityManager.Instance != null)
+            AccessibilityManager.Instance.PlayHaptic(0.25f, 0.45f, 0.12f);
     }
 
     public void SetJumpAbility(bool enable) => canJump = enable;

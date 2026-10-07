@@ -4,6 +4,9 @@ using UnityEngine;
 /// <summary>
 /// Vies du joueur + dégâts Poison / Lave (consignes Magilune).
 /// Ne détruit pas le GameObject : respawn au checkpoint pour un public 3+.
+///
+/// Intègre AccessibilityManager (multiplicateur de dégâts, durée i-frames,
+/// mode Exploration, haptiques renforcés).
 /// </summary>
 public class PlayerHealth : Entity
 {
@@ -58,7 +61,12 @@ public class PlayerHealth : Entity
     {
         if (amount <= 0 || currentHealth <= 0 || isInvulnerable) return;
 
-        currentHealth = Mathf.Max(0, currentHealth - amount);
+        // Application du multiplicateur d'accessibilité (+ mode Exploration)
+        int finalDamage = amount;
+        if (AccessibilityManager.Instance != null)
+            finalDamage = AccessibilityManager.Instance.GetDamageTaken(amount);
+
+        currentHealth = Mathf.Max(0, currentHealth - finalDamage);
         HealthChanged?.Invoke(currentHealth, maxHealth);
         PlayHitFeedback();
 
@@ -76,6 +84,11 @@ public class PlayerHealth : Entity
     {
         PlayerDied?.Invoke();
         PlaySfx(deathClip);
+
+        // Haptique plus forte à la mort
+        if (AccessibilityManager.Instance != null)
+            AccessibilityManager.Instance.PlayHaptic(0.7f, 0.9f, 0.35f);
+
         Respawn();
     }
 
@@ -158,15 +171,24 @@ public class PlayerHealth : Entity
         if (animator != null) animator.SetTrigger(AnimHurt);
         if (hitParticles != null) hitParticles.Play();
         PlaySfx(hitClip);
+
+        // Haptique accessibilité
+        if (AccessibilityManager.Instance != null)
+            AccessibilityManager.Instance.PlayHaptic(0.45f, 0.65f, 0.18f);
     }
 
     private IEnumerator IFrameRoutine()
     {
         isInvulnerable = true;
+        float duration = GetEffectiveIFrameDuration();
         float elapsed = 0f;
-        const float flashStep = 0.08f;
 
-        while (elapsed < iFrameDuration)
+        // Flash plus rapide / plus visible si feedbacks renforcés
+        float flashStep = 0.08f;
+        if (AccessibilityManager.Instance != null && AccessibilityManager.Instance.enhancedVisualFeedback)
+            flashStep = 0.06f;
+
+        while (elapsed < duration)
         {
             if (spriteRenderer != null)
                 spriteRenderer.color = spriteRenderer.color == defaultColor ? hitFlashColor : defaultColor;
@@ -177,6 +199,13 @@ public class PlayerHealth : Entity
 
         if (spriteRenderer != null) spriteRenderer.color = defaultColor;
         isInvulnerable = false;
+    }
+
+    private float GetEffectiveIFrameDuration()
+    {
+        if (AccessibilityManager.Instance != null)
+            return AccessibilityManager.Instance.GetIFrameDuration();
+        return iFrameDuration;
     }
 
     private static void PlaySfx(AudioClip clip)

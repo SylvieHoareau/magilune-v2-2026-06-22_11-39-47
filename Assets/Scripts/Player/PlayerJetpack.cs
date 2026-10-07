@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 /// Locomotion de la seconde partie du niveau (jetpack).
 /// Interact maintenu = poussée. Carburant qui se recharge au sol.
 /// Déverrouillé via AbilityZone, le pickup Jetpack, ou SetUnlocked(true).
+///
+/// Intègre AccessibilityManager (force, carburant max, régénération).
 /// </summary>
 public class PlayerJetpack : MonoBehaviour
 {
@@ -40,13 +42,22 @@ public class PlayerJetpack : MonoBehaviour
 
     public bool IsUnlocked => unlocked;
     public bool IsThrusting => isThrusting;
-    public float FuelNormalized => maxFuel <= 0f ? 0f : currentFuel / maxFuel;
+
+    /// <summary>Carburant normalisé (0–1) en tenant compte du multiplicateur accessibilité.</summary>
+    public float FuelNormalized
+    {
+        get
+        {
+            float effectiveMax = GetEffectiveMaxFuel();
+            return effectiveMax <= 0f ? 0f : currentFuel / effectiveMax;
+        }
+    }
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         playerController = GetComponent<PlayerController>();
-        currentFuel = maxFuel;
+        currentFuel = GetEffectiveMaxFuel();
         if (animator == null) animator = GetComponent<Animator>();
 
         thrustSource = gameObject.AddComponent<AudioSource>();
@@ -66,6 +77,11 @@ public class PlayerJetpack : MonoBehaviour
             holdingThrust = false;
             StopThrustVisuals();
         }
+        else
+        {
+            // On recharge un peu quand on débloque le jetpack
+            currentFuel = Mathf.Max(currentFuel, GetEffectiveMaxFuel() * 0.5f);
+        }
     }
 
     public void HandleInteract(InputAction.CallbackContext context)
@@ -78,6 +94,9 @@ public class PlayerJetpack : MonoBehaviour
 
     private void Update()
     {
+        float effectiveMax = GetEffectiveMaxFuel();
+        float effectiveRegen = GetEffectiveRegen();
+
         bool wantsThrust = unlocked && holdingThrust && currentFuel > 0f;
         if (wantsThrust && !isThrusting && currentFuel < minFuelToStart)
             wantsThrust = false;
@@ -87,7 +106,10 @@ public class PlayerJetpack : MonoBehaviour
         if (isThrusting)
             currentFuel = Mathf.Max(0f, currentFuel - fuelDrainPerSecond * Time.deltaTime);
         else if (playerController != null && playerController.IsGrounded)
-            currentFuel = Mathf.Min(maxFuel, currentFuel + fuelRegenPerSecond * Time.deltaTime);
+            currentFuel = Mathf.Min(effectiveMax, currentFuel + effectiveRegen * Time.deltaTime);
+
+        // Clamp au cas où le multiplicateur change en runtime
+        currentFuel = Mathf.Clamp(currentFuel, 0f, effectiveMax);
 
         UpdateVisuals();
     }
@@ -96,7 +118,8 @@ public class PlayerJetpack : MonoBehaviour
     {
         if (!isThrusting || rb == null) return;
 
-        rb.AddForce(Vector2.up * thrustForce, ForceMode2D.Force);
+        float effectiveThrust = GetEffectiveThrust();
+        rb.AddForce(Vector2.up * effectiveThrust, ForceMode2D.Force);
 
         Vector2 velocity = rb.linearVelocity;
         if (velocity.y > maxRiseSpeed)
@@ -105,6 +128,31 @@ public class PlayerJetpack : MonoBehaviour
             rb.linearVelocity = velocity;
         }
     }
+
+    #region Accessibilité – helpers
+
+    private float GetEffectiveThrust()
+    {
+        if (AccessibilityManager.Instance != null)
+            return AccessibilityManager.Instance.GetJetpackThrust(thrustForce);
+        return thrustForce;
+    }
+
+    private float GetEffectiveMaxFuel()
+    {
+        if (AccessibilityManager.Instance != null)
+            return AccessibilityManager.Instance.GetJetpackMaxFuel(maxFuel);
+        return maxFuel;
+    }
+
+    private float GetEffectiveRegen()
+    {
+        if (AccessibilityManager.Instance != null)
+            return AccessibilityManager.Instance.GetJetpackRegen(fuelRegenPerSecond);
+        return fuelRegenPerSecond;
+    }
+
+    #endregion
 
     private void UpdateVisuals()
     {
