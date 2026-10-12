@@ -13,11 +13,12 @@ public class AccessibilityUI : MonoBehaviour
 {
     [Header("Références principales")]
     [SerializeField] private GameObject panel;
-    [Tooltip("TextMeshPro - Text (UI) uniquement")]
+    [Tooltip("Optionnel. NE PAS mettre le Title ici, sinon « Accessibilité » sera écrasé. Laisse vide ou crée un texte séparé « StatusLabel ».")]
     [SerializeField] private TextMeshProUGUI statusLabel;
 
-    [Header("Bouton d'ouverture (créé auto si vide)")]
-    [SerializeField] private bool createFloatingButton = true;
+    [Header("Bouton d'ouverture")]
+    [Tooltip("Décoche si tu as déjà AccessibilityButton dans la scène")]
+    [SerializeField] private bool createFloatingButton = false;
     [SerializeField] private Button openMenuButton;
 
     [Header("Boutons Presets")]
@@ -390,9 +391,15 @@ public class AccessibilityUI : MonoBehaviour
 
     private static string BuildStatusText(AccessibilityManager m)
     {
-        if (m.explorationMode) return "Mode : Je découvre";
-        if (m.autoJump || m.holdToJump || m.aimAssist) return "Mode : J'ai besoin d'aide";
-        if (m.highContrast) return "Mode : Je vois mieux";
+        // Textes alignés sur les boutons de la nouvelle UI simplifiée
+        if (m.explorationMode && !m.autoJump && !m.holdToJump)
+            return "Mode : Je découvre";
+        if (m.autoJump || m.holdToJump || m.aimAssist)
+            return "Mode : J'ai besoin d'aide";
+        if (m.highContrast || m.largeElements)
+            return "Mode : Je vois mieux";
+        if (m.explorationMode)
+            return "Mode : Je découvre";
         return "Mode : Normal";
     }
 
