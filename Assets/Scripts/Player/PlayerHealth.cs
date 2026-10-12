@@ -60,8 +60,9 @@ public class PlayerHealth : Entity
     public override void TakeDamage(int amount)
     {
         if (amount <= 0 || currentHealth <= 0 || isInvulnerable) return;
+        if (PlayerController.IsGamePaused) return;
 
-        // Application du multiplicateur d'accessibilité (+ mode Exploration)
+        // Multiplicateur accessibilité + mode Exploration (« Je découvre » / « J'ai besoin d'aide »)
         int finalDamage = amount;
         if (AccessibilityManager.Instance != null)
             finalDamage = AccessibilityManager.Instance.GetDamageTaken(amount);

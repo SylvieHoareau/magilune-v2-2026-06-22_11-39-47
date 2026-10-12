@@ -57,6 +57,7 @@ public class PlayerController : MonoBehaviour
     private float baseScaleX = 1f;
     private Coroutine dropRoutine;
     private bool jumpHeld; // pour hold-to-jump
+    private float autoJumpCooldown; // évite le spam de sauts auto
 
     private static readonly int AnimSpeed = Animator.StringToHash("Speed");
     private static readonly int AnimGrounded = Animator.StringToHash("IsGrounded");
@@ -98,22 +99,21 @@ public class PlayerController : MonoBehaviour
 
         if (jumpBufferCounter > 0f) jumpBufferCounter -= Time.deltaTime;
 
+        if (autoJumpCooldown > 0f)
+            autoJumpCooldown -= Time.deltaTime;
+
         // Saut classique (buffer + coyote)
         if (canJump && jumpBufferCounter > 0f && coyoteCounter > 0f)
             PerformJump();
 
         // Hold-to-jump : tant que le bouton est maintenu et qu'on est au sol → saut
-        if (canJump && jumpHeld && isGrounded && IsHoldToJumpEnabled())
+        if (canJump && jumpHeld && isGrounded && IsHoldToJumpEnabled() && autoJumpCooldown <= 0f)
             PerformJump();
 
-        // Auto-jump très simple : si on avance et qu'on est au sol, on saute automatiquement
-        // (utile pour les enfants qui ont du mal avec le timing)
-        if (canJump && IsAutoJumpEnabled() && isGrounded && Mathf.Abs(moveInput.x) > 0.3f)
-        {
-            // On laisse un petit délai pour éviter de spammer le saut
-            if (coyoteCounter >= effectiveCoyote * 0.9f)
-                PerformJump();
-        }
+        // Auto-jump : si on avance et qu'on est au sol, on saute automatiquement
+        // (preset « J'ai besoin d'aide »)
+        if (canJump && IsAutoJumpEnabled() && isGrounded && Mathf.Abs(moveInput.x) > 0.3f && autoJumpCooldown <= 0f)
+            PerformJump();
 
         UpdateAnimator();
     }
@@ -215,6 +215,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnShoot(InputAction.CallbackContext context)
     {
+        if (IsGamePaused) return;
         if (context.started)
             playerGun?.TryShoot();
     }
@@ -228,6 +229,7 @@ public class PlayerController : MonoBehaviour
         jumpBufferCounter = 0f;
         coyoteCounter = 0f;
         isGrounded = false;
+        autoJumpCooldown = 0.35f; // anti-spam auto-jump / hold-to-jump
 
         float force = GetEffectiveJumpForce();
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, force);
@@ -236,7 +238,6 @@ public class PlayerController : MonoBehaviour
         PlaySfx(jumpClip);
         if (jumpDust != null) jumpDust.Play();
 
-        // Haptique accessibilité
         if (AccessibilityManager.Instance != null)
             AccessibilityManager.Instance.PlayHaptic(0.25f, 0.45f, 0.12f);
     }

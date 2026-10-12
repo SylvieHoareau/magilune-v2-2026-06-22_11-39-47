@@ -50,6 +50,7 @@ public class PlayerGun : MonoBehaviour
 
     public bool TryShoot()
     {
+        if (PlayerController.IsGamePaused) return false;
         if (projectilePrefab == null || Time.time < nextFireTime) return false;
 
         nextFireTime = Time.time + fireRate;

@@ -2773,7 +2773,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 242716673}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AccessibilityUI, Assembly-CSharp
+        m_MethodName: ApplyNormalPreset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &242716673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2895,7 +2907,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 242894232}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AccessibilityUI, Assembly-CSharp
+        m_MethodName: ApplyVisualPreset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &242894232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3715,6 +3739,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 871035953}
   - {fileID: 1065746292}
   - {fileID: 1510124293}
   - {fileID: 1455459024}
@@ -5852,7 +5877,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &565046372
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5865,10 +5890,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1031124353}
   - {fileID: 1074281639}
   - {fileID: 1970149447}
-  - {fileID: 871035953}
   - {fileID: 287859212}
   - {fileID: 606240048}
   m_Father: {fileID: 1064825721}
@@ -6110,7 +6133,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 606240050}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AccessibilityUI, Assembly-CSharp
+        m_MethodName: CloseMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &606240050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7281,7 +7316,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 703011421}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AccessibilityUI, Assembly-CSharp
+        m_MethodName: ApplyMotorPreset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &703011421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7338,7 +7385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &706830457
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7403,9 +7450,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1031124354}
         m_TargetAssemblyTypeName: AccessibilityUI, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OpenMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12525,7 +12572,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 837527397}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AccessibilityUI, Assembly-CSharp
+        m_MethodName: ApplyExplorationPreset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &837527397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12810,7 +12869,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871035952}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12822,11 +12881,11 @@ RectTransform:
   - {fileID: 266313757}
   - {fileID: 267024832}
   - {fileID: 1994320538}
-  m_Father: {fileID: 565046372}
+  m_Father: {fileID: 287859212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -341.55, y: -62.35}
+  m_AnchoredPosition: {x: -813.26, y: 0}
   m_SizeDelta: {x: 683.1, y: 413.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &881898978
@@ -13877,12 +13936,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031124352}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 565046372}
+  m_Father: {fileID: 1064825721}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13903,11 +13962,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AccessibilityUI
   panel: {fileID: 565046371}
   statusLabel: {fileID: 0}
-  createFloatingButton: 0
-  openMenuButton: {fileID: 706830458}
+  createFloatingButton: 1
+  openMenuButton: {fileID: 0}
   presetDefaultButton: {fileID: 242716672}
   presetMotorButton: {fileID: 703011420}
-  presetExplorationButton: {fileID: 703011420}
+  presetExplorationButton: {fileID: 837527396}
   presetVisualButton: {fileID: 242894231}
   resetButton: {fileID: 242716672}
   closeButton: {fileID: 606240049}
@@ -13926,7 +13985,7 @@ MonoBehaviour:
   jumpForceLabel: {fileID: 0}
   timeScaleLabel: {fileID: 0}
   damageLabel: {fileID: 0}
-  advancedSection: {fileID: 287859211}
+  advancedSection: {fileID: 0}
   advancedToggleButton: {fileID: 0}
   startWithAdvancedHidden: 1
   pauseGameWhenOpen: 1
@@ -14523,6 +14582,7 @@ RectTransform:
   - {fileID: 1924789931}
   - {fileID: 254993816}
   - {fileID: 706830457}
+  - {fileID: 1031124353}
   - {fileID: 565046372}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19929,7 +19989,7 @@ MonoBehaviour:
   fuelRegenPerSecond: 1.4
   minFuelToStart: 0.15
   flameVisual: {fileID: 747855861}
-  thrustParticles: {fileID: 0}
+  thrustParticles: {fileID: 747855864}
   thrustLoopClip: {fileID: 0}
   animator: {fileID: 1591885244}
 --- !u!95 &1591885244
